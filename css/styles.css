@@ -1,0 +1,392 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f1f1f19d;
+}
+
+header {
+    background-color: #ffffff;
+    font-family: monospace;
+    color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*HEADER*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-transform: uppercase;
+}
+
+.intro-text {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.big-text {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.rounded-square {
+    width: 1400px;
+    height: 650px;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.83);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.rounded-square img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Animation for the rounded-square */
+.rounded-square:hover {
+    transform: scale(1.05);
+}
+
+/* text inside the rounded-square */
+.rounded-square h1 {
+    font-size: 45px;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: 4px 4px #000000;
+    padding: 30px;
+}
+
+/*  "Shop Now" button */
+.rounded-square .shop-now-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6d6a6c;
+    color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-square .shop-now-btn:hover {
+    background-color: #d96bbd;
+}
+
+/*NEW ARIVALS*/
+
+.new-arrivals {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffa2e639;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+/*SIGN UP*/
+.signup {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffb6c1; /* Pink background */
+}
+
+.container1 {
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff03ab;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    text-align: center;
+}
+
+/*ABOUT US */
+
+.aboutus {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-image img {
+    width: 300px;
+}
+
+/* mobile devices */
+@media screen and (max-width: 600px) {
+    .rounded-square {
+        width: 90%;
+        height: auto;
+    }
+
+    .rounded-square h1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .rounded-square .shop-now-btn {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .new-arrivals h2 {
+        font-size: 24px;
+    }
+
+    .item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .signup-form h2 {
+        font-size: 24px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group button {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 30px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding: 20px 0;
+    }
+
+    .about-image img {
+        width: 70%;
+    }
+}
+
+/* tablet devices */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .rounded-square {
+        width: 80%;
+        height: auto;
+    }
+
+    .rounded-square h1 {
+        font-size: 36px;
+        padding: 30px;
+    }
+
+    .rounded-square .shop-now-btn {
+        font-size: 24px;
+        padding: 20px 30px;
+    }
+
+    .new-arrivals h2 {
+        font-size: 30px;
+    }
+
+    .item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .signup-form h2 {
+        font-size: 30px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-text {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .about-image img {
+        width: 300px;
+    }
+}
